@@ -1,0 +1,75 @@
+* {
+    font-family: 'Courier New';
+}
+
+h1, h3 {
+    color: #b92b27;
+}
+
+#login {
+    background-color: white;
+}
+
+#signup {
+    background-color: #b92b27;
+    color: white;
+}
+
+.upvote {
+    background-color: olivedrab;
+    color: aliceblue;
+}
+
+/* Descendent Selector */
+main p a {
+    color: goldenrod;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: darkorange;
+}
+
+/* Adjacent Selector */
+p + h3 {
+    color: cadetblue;
+}
+
+/* Child combinators */
+div > input {
+    background-color: white;
+}
+
+/* Attribute selector */
+input[type=password] {
+    color: crimson;
+}
+/* Only styles the password box */
+
+input[type=text] {
+    color: green;
+}
+/* Only styles the text box */
+
+input[type] {
+    background-color: ghostwhite;
+}
+/* Styles both the text & password box */
+
+button:hover {
+    background-color: black;
+    color: white;
+}
+
+p:active {
+    color: green;
+    font-weight: bold;
+}
+
+h2 {
+    background-color: blue !important;
+}
+
+input {
+    background-color: inherit;
+}
