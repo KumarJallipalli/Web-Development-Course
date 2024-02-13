@@ -1,0 +1,155 @@
+<!-- 
+    What is HTML..?
+        - It is the basic building block of a webpage
+        - It is the skeleton/structure upon which the whole webpage is build.
+            - i.e., why we can say, it describes the structure of the webpage.
+        - This structure of the webpage is defined/designed using HTML tags.
+        - It provides description[structure & format] of webpage
+            - i.e., it tells the browser, what, where & how to display the content
+        - HTML is Case-InSenstive language [⇒ Tags are also Case-InSensitive]
+-->
+
+<!-- 
+    Browser:
+        - Purpose of browser[like chrome, edge..] is to read the HTML doc & display it correctly.
+        - browser doesn't display the HTML tags, but it uses tags to determine how to display the content of webpage.
+-->
+
+<!-- 
+        HTML Doc    ->  Rendered by Browser     ->  Displayed to User as Web-Page
+-->
+
+<!-- 
+    HTML:
+        - It is a Language. Not just any Language but a "Mark-Up Language".
+        - It uses tags to annotate/mark-up the text. i.e., why called Mark-Up language
+            Annotate -> It is to format/style the text so that, it will stand out from remaining text.
+        - It is not just a Mark-Up Language, but a "HyperText Mark-Up Language".
+            HyperText -> Text upon clicking takes us to another webpage. [Link one webpage to another]
+-->
+
+<!-- 
+    What is TAG..?
+        - It is the keyword which tells the browser how to render the content/text of HTML document.
+        - That means, It is the actual component which is used to design the structure of webpage.
+        - With the help of tags, a web browser can distinguish between an HTML content and a simple content.
+        - It acts as a container for some content or other tags.
+-->
+
+<!-- 
+    What is HTML Element..?
+        - [ Opening tag   +   Content   +   Closing tag ] 
+        -> All together is called an HTML element
+-->
+
+<!-- 
+    Attributes:
+        - Attributes are the properties of the element which adds extra information.
+        - All HTML elements can have attributes.
+        - All attributes should be given in the starting tag/opening tag.
+-->
+
+<!-- 
+    HTML document can be opened in 2 ways, by using
+        1. Text-Editor
+        2. Browser
+-->
+
+<!-- ------------------------------------------------------------------------------------------------------------- -->
+
+<!DOCTYPE html>
+<!-- 
+    [Case-InSensitive] 
+    → It tells the browser that it is a HTML V5 document. [So that browser will render according to V5 rules]
+-->
+
+<html lang="en">    <!-- → here lang attribute says that the content of this html web page is in English Language -->
+<!-- 
+    - <html> tag is the root tag.
+    - Everything we want to write, we have to write inside <html> tag.
+-->
+
+<head>
+<!-- 
+    <head> → which contains all the meta data of the html doc, which generally not shown to user.
+        - meta data means “data about data” i.e., head contains data about html data.
+            - meta data like → charset, title, viewport, style, fevicon etc…    
+        - It will have the data which is imp from the developer point of view but not from users
+-->
+
+    <meta charset="UTF-8">
+    <!-- 
+        UTF-8 is a character encoding standard similar to ASCII [which stores only 192 char] but stores a large amount of char 
+        across from hindi, telugu & other lang alphabets and symbols etc… 
+    -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 
+        - viewport → screen/display visible to us that actually displays the content
+        - width = device-width → show the width of viewport as the device’s width [like mobile, desktop accordingly]
+        - initial-scale = 1.0 → It is the zoom ratio at the time of 1st load. set this zoom level to 1 [i.e., 100%, means no zoom] 
+    -->
+    <title>HTML BASICS - I</title>
+    <!-- 
+        - This describes the title of the webpage itself & is shown on the tab area along with favicon
+        - Google searches the google queries based on the title tag inside the head tag. i.e., why title tag is V.Imp for SEO
+    -->
+</head>
+
+<body>
+<!-- 
+    <body> → It contains the actual html content or data to be displayed to user.
+        - It will have the data which is imp from end user point of view
+-->
+
+<!-- 
+    H - tags:
+    --------
+    - h-tag → HTML section heading tag.
+    - Heading tags in HTML are used to give a title or subtitle to the section on the webpage.
+    - It consists of total 6 levels of section headings
+        - <h1> - <h6> with <h1> being the highest section level & <h6> being the lowest section.
+        - As h1 is an important part of SEO & used to give the Main Keyword to the whole content.
+            - i.e., why Use <h1> tag only once in entire document & it is a good practice
+-->
+<h1>A brown lazy fox jumped over the ledge</h1>
+<h2>A brown lazy fox jumped over the ledge</h2>
+<h3>A brown lazy fox jumped over the ledge</h3>
+<h4>A brown lazy fox jumped over the ledge</h4>
+<h5>A brown lazy fox jumped over the ledge</h5>
+<h6>A brown lazy fox jumped over the ledge</h6>
+
+<!-- 
+    After the <h6>, whatever the number you give it to <h?> it will behave like the <p> tag
+-->
+<h7>A brown lazy fox jumped over the ledge</h7>
+<h8>A brown lazy fox jumped over the ledge</h8>
+<h47>A brown lazy fox jumped over the ledge</h47>
+
+
+<!-- 
+    Why h-tags are only upto h6..?
+        - As 5 levels are mostly sufficient for heading purpose of a document, but 6 levels being the standard defined by SGML.  
+-->
+
+<!-- 
+    P-tag:
+    -----
+    p-tag -> paragraph tag is used to display content as paragraphs on a web page.
+            * <p> tag have same text size as <h4> tag [without bold]
+            * <p> tags can also be used for line breaks.
+-->
+<p>A brown lazy fox jumped over the ledge</p>
+
+<!-- 
+    <br/> → is used to give a line break in a text
+-->
+<br>
+
+<!-- 
+    what happens when we close an empty tag..?
+        - Empty tags can be defined as <br> (or) </br>
+        - So, will still behave like an empty tag only, hence it will be executed 2 times.
+-->
+
+</body>
+</html>

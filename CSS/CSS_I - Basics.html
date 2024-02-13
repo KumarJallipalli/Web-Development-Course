@@ -1,0 +1,85 @@
+
+<!-- 
+    CSS - Cascading Style Sheets
+        - CSS is language used to describe the STYLE of the webpage/document
+        - But to actually style something, we need to have that something called some structure
+            - i.e., why CSS will always require HTML & we learn HTML before CSS.
+-->
+
+<!-- 
+    Why de owe need CSS..?
+        - It plays an important role in displaying the UI
+        - It is one of the reason which keeps the Users from going away
+-->
+
+<!-- 
+    Basic format of CSS
+        - Selector → It selects tag/content where CSS to be applied [where to be applied]
+        - Property → it defines the which CSS style for that particular selector [what style to be applied]
+        - Value → its the value of the property [how much to be applied]
+        
+    - Property & value always comes in pairs in CSS
+    - Semicolon ( ; ) → it is not mandatory but V.Imp to follow as programming standards
+-->
+
+<!-- 
+    How to include CSS styles in HML..?
+        1. Inline CSS
+        2. Internal CSS
+        3. External CSS
+
+    1. Inline CSS 
+        - Writing style directly inline with HTML element
+        - It uses `style` attribute to give Styles to page
+            - The value of “style” will  have the property:value pair.
+        - It is given inside the start tag only
+        - We will never use this as this makes code redundant 
+            [ As we need to write style to each & every element one by one ]
+    
+    2. Internal CSS
+        - Using `<style>` tag in the same document/file to give styles to the page
+        - This was always given in `<head>` tag
+        - This address the inline CSS issue but it makes code larger & lenghtier.
+        - Hence we don’t use this type of styling.
+    
+    3. External CSS
+        - Writing CSS in a separate document/file & linking it HTML file
+        - We use `<link>` tag to link the CSS file with HTML file & is always given in `<head>` tag
+        - This address the above 2 issue’s & is used to give styling in real life projects
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS_I - Basics</title>
+
+    <!-- Internal CSS -->
+    <style>
+        h1 {
+            color: orange;
+        }
+        /* 
+            h1 -> selector
+            color -> property
+            orange -> property value
+        */
+    </style>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="CSS-I.css">
+
+        <!-- 
+            Here,
+                - rel -> it describes the relationship between the linking file & HTML file
+                - href -> it describes the location/path of the linking file
+        -->
+
+</head>
+<body>
+    <!-- Inline CSS -->
+    <h1 style="color: blue;">Hello World</h1>
+</body>
+</html>

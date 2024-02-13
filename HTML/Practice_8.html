@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML IV - Practice Q8</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+
+    <form action="server.js">
+        <label for="uname">Username</label>
+        <input type="text" name="fname" id="uname" placeholder='First Name'>
+        <input type="text" name="lname" id="uname" placeholder="Last Name">
+    
+        <br>
+    
+        <label for="gender">Please select geneder: </label>
+        <select name="gender" id="gender">
+            <option value="">--Please select--</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+            <option value="O">Others</option>
+        </select>
+    
+        <br>
+    
+        Do you agree to all the Terms & conditions?
+        <input type="checkbox" id="T&C" name="T&C"> 
+        <label for="T&C">Yes, I agree</label>
+    
+        <br>
+        
+        <button>Register</button>
+    </form>
+
+</body>
+</html>

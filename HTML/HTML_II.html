@@ -1,0 +1,152 @@
+
+<!-- 
+    HTML is NOT Case-Sensitive
+        - Hence `<tags>` are also NOT Case-Sensitive
+        - But `<Emmets>` are Case-Sensitive
+-->
+
+<!-- 
+    **Comments in HTML:**
+        - Comments in HTML are ignored by browser & it won’t be displayed to End-User.
+        - These comments are generally used by developers for better documentation purpose, 
+            so that the other developer can understand it [code].
+-->
+
+<!-- 
+    **Div Element**: [Content Division Element]
+        - Div is used to group elements together (or) acts as an container to hold other elements
+        - Div is a block-level Element
+
+    **Span Element**:
+        - Span is also a generic container used to hold the other html elements or group elements together
+        - But, span is an in-line element.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--    
+        HTML Lists:
+        ----------
+            HTML Lists are used to specify list of items.
+            There are 3 types of Lists in HTML, they are:
+            - Ordered List
+            - Unordered List
+            - Description List
+    -->
+
+    <!-- 
+        1. The <ol> tag represent an ordered list of items.
+            - But to actually display the list of items, we need to use <li> tag → list item
+    -->
+    <ol type="I" reversed start="2">
+        <li>ONE</li>
+        <li>TWO</li>
+        <li>THREE</li>
+        <li>FOUR</li>
+    </ol>
+    <!-- 
+        type -> describes the list numbering type. [1, a, A, i, I. There is no "none"]
+        reversed -> describes the list numbering in reverse manner
+        start -> used to predefine the start No. of list numbering. [It should always be in 1,2... NOT roman or alphabetical]
+            - if we give both start & reversed attributes together, 
+            then the numbering will start from given start value & then decrease.
+    -->
+
+    <!-- 
+        2. The <ul> element represents an unordered list of items.
+    -->
+    <ul type="none">
+        <li>Eat</li>
+        <li>Code</li>
+        <li>Sleep</li>
+        <li>Repeat</li>
+    </ul>
+    <!-- 
+        type -> describes the list numbering type. [square, circle, disc & none]
+    -->
+
+    <!-- 
+        <li> tags can be used to directly display the list of items
+        → But by default, it displays content in un-ordered list
+        → These behave as an individual elements, hence we cannot change the type of list items all together even with <div> tag 
+    -->
+
+    <!-- 
+        3. The <dl> element represents a description list.
+            - Instead of <li>, it has 2 elements called <dt> & <dd>
+            - The <dt> → "description term" element specifies a term in the list.
+            - The <dd> → "description detail" element provides the description/definition/value for the preceding term (`<dt>`)
+            - There is NO specific rule that <dd> should always come after <dt> , These can come in any of the combination
+    -->
+    <dl>
+        <dt>HTML</dt>
+        <dd>HyperText Markup Language</dd>
+
+        <dt>HTML</dt>
+        <dt>CSS</dt>
+        <dt>JS</dt>
+        <dd>All of the above 3 technologies together forms FrontEnd Development</dd>
+        <dd>But to get a job we need to know atleast 1 JS framework like React (or) Angular</dd>
+    </dl>
+
+
+    <!-- 
+        Anchor Element <a> :
+
+            - `<a>` tag is used to add links in our webpage
+            - `<a>` tag converts a normal text into “hypertext”
+
+            - href → hypertext reference is must attribute for `<a>` tag
+                    - This will have the destination/linked page URL
+                    - We can give “href” values using 2 methods
+                        - `Absolute` Add → giving full add of website
+                        - `Relative` Add → giving add relative to absolute
+            - target -> it describes where to open the destination/linked page. [_blank, _self, _parent & _top]
+            - download → used to download the file
+
+            - To create links that open in the user's email application so as to let them send a new mail
+                - < a href = “ mailto: kumar.jallipalli@gmail.com “ > Mail to Kumar </a>
+            - To link Telephone numbers,
+                - < a href = “ tel: +9988774455 “ > Call to Kumar </a>
+    -->
+
+
+    <!-- 
+        Image ELement `<img/>` :
+
+            - <img/> element is used to embed images in web pages
+            - The ”src” attribute is **required**, and contains the URL which points out to the image to be embeded.
+                - We can give the value for “src”
+                        - Locally → by downloading the img & giving it’s path in the “src”
+                        - Online → the whole image’s absolute address from internet as the URL
+            - The ”alt” attribute holds the textual replacement for the image, which is mandatory and **incredibly useful** for accessibility
+                - screen readers read the attribute value out to their users so they know what the image means.
+                - Alt text is also displayed on the page if the image can't be loaded for some reason
+                    - for example, network errors, content blocking, or linkrot.
+                - Setting this attribute to an empty string (`alt=""`) 
+                  indicates that this image is *not* a key part of the content & broken img symbol is not displayed as well
+            - “loading” → Indicates how the browser should load the image
+                - eager → Loads the image immediately, even if image is currently NOT within the visible viewport (default value).
+                - lazy → Defers loading the image until it reaches a calculated distance from the viewport, as defined by the browser.
+                    - This generally improves the performance of the content in most typical use cases.
+    -->
+
+    <!-- 
+        More HML Tags:
+    -->
+    <br> <!--Used to give Line Break -->
+    <b>Used to BOLD the text content</b>
+    <i>Used to ITALITIZE the text content</i>
+    <u>Used to Underline the text content</u>
+    <hr> <!-- Used to give a horizantal rule/line -->
+
+
+</body>
+</html>

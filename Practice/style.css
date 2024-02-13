@@ -1,0 +1,10 @@
+section div {
+    height: 100px;
+    background-color: cadetblue;
+    border: 3px solid black;
+    text-align: center;
+    width: 100px;
+    margin: 10px;
+    display: inline-block;
+}
+

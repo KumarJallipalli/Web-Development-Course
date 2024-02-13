@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="black">
+        <caption>Food Menu</caption>
+    </table>
+
+
+    <!-- FORMS in HTML -->
+    <form action="/server.js">\
+        <!-- 1st way -->
+        Username:
+        <input type="text" placeholder="Username">
+
+        <!-- 2nd way -->
+        <label>
+            Username:
+            <input type="text" placeholder="Username">
+        </label>
+
+        <!-- Classical way -->
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="Username">
+
+        <button type="reset">reset</button>
+    </form>
+    
+    <button type="reset">reset</button>
+
+    <!-- Radio buttons & checkboxes -->
+    <div>
+        Choose your subjects
+        <input type="radio" name="sub" id="math" value="math">
+        <label for="math">math</label>
+
+        <input type="radio" name="sub" id="sci" value="sci">
+        <label for="sci">science</label>
+
+        <input type="radio" name="sub" id="eng" value="eng">
+        <label for="eng">english</label>
+    </div>
+
+    <div>
+        Choose your favourite fruit
+        <input type="radio" name="fruits" id="apple" value="apple">
+        <label for="apple">apple</label>
+
+        <input type="radio" name="fruits" id="banana" value="banana">
+        <label for="banana">banana</label>
+
+        <input type="radio" name="fruits" id="mango" value="mango">
+        <label for="mango">mango</label>
+    </div>
+
+</body>
+</html>

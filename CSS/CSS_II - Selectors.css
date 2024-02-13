@@ -1,0 +1,30 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* 
+    Element-Selector: Used to select all the elements that have the mentioned selector name
+*/
+h1, h3 {
+    color: #B92B27;
+}
+/* 
+    A selector list ( , ) is a comma-separated list of selectors
+        - Used to group selectors & apply styles to them
+*/
+
+/* 
+    ID-Selector: Used to select an element based on it’s id-value
+*/
+#login {
+    background-color: white;
+}
+#signup {
+    color: white;
+    background-color: #B92B27;
+}
+
+.upvote {
+    background-color: green;
+    color: aliceblue;
+}

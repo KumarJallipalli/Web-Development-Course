@@ -1,0 +1,84 @@
+
+<!-- 
+    HTML 5:
+        - HTML Standard → is a Document that tells browser how HTML should work
+            - i.e Browser renders the HTML doc according to HTML standard
+        - HTML5 not only contains HTML Standard but also some JS API’s for storage, multimedia Harware Access etc..
+-->
+
+<!-- 
+    HTML elements are of 2 types.
+    **Inine vs Block**:
+        - Block Elements
+            - Takes up the full-width available [whole block], even if the content within it don’t require.
+            - Starts from new line
+            - It actually divides the entire page into blocks of content.
+            - ex: h-tags, p-tags, div-tag etc..
+        - InLine Elements
+            - Takes up only necessarly width [necessary by the content within it or tag]
+            - Don’t start from new line but from the end of the previous element
+            - These are actually used to differentiate the specific part of the text
+            - ex: anchor-tag, img-tag, span-tag etc..
+
+    We can verify an element using
+        - inspect
+        - by actually writing 2 similar elements next by next
+-->
+
+<!-- 
+    DIV element <div> :
+
+    <div> → Content Division Element
+        - Div is used to group elements together (or) acts as an container to hold other elements [so that those elements can be easily styled]
+        - Div is a block-level Element
+        - It has no effect on the content or layout, until styled in some way using CSS
+
+    SPAN Element <span> :
+        - Span is same sa Div element except it is an InLine Container.
+            - i.e., elements grouped together using `<span>` shows In-line behavior
+        - Span is an InLine element.
+-->
+
+<!-- 
+        These <div> or <span> elements should be used only when no other semantic element is appropriate.
+-->
+
+<!-- 
+    Difference between <hr/> & <br/> tags
+        - <hr/> → used to actually print a line/divider
+        - <br/> → used to print an Empty line
+
+    <sub> & <sup> tags
+        - <sub> → used to describe the content as SubScript
+        - <sup> → used to describe the content as SuperScript
+-->
+
+<!-- 
+    Semantic Tags:
+        - Semantic tags → Tags that relates to the meaning of the content
+        - i.e., upon looking into these tags names itself we can understand what are these tags used for.
+        - These tags makes the code more meaningful & forms a structured layout
+        - These are used to make the website SEO friendly
+        - It is very useful for screen readers for accessibility
+
+    <section> tag → same as div tag but semantic
+    <aside> tag → used to contain the related information to this page
+-->
+
+<!-- 
+    Entities:
+        - HTML Entity is a piece of text [”string”] that starts with & and ends with semicolon ;
+        - These are used to display reserved characters, invisible & special characters which are not able to type using keyboard.
+        - ex: &amp; &lt; &gt; &quot; &nbsp; &hearts;
+-->
+
+<!-- 
+    Emmets:
+        - Emmet is the essential toolkit for web-developers
+        - This plugin will give us shortforms called emment abbriviations to code faster
+
+    Some of the shortforms are:
+        - Child ( > ) → nav>ul>li ⇒ `nav` contains `ul` , now ul becomes child of nav
+        - sibling ( + ) → nav+ul ⇒ `nav` comes along with `ul` , these 2 are at same level
+        - multipication ( * ) → ul>li*5 ⇒ inside `ul` we will get 5 `li` elements
+-->

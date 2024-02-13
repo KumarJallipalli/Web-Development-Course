@@ -1,0 +1,101 @@
+h1 {
+    color: orange;
+}
+
+/* 
+    Color Property
+        - `Color` → Color property is used to set the color of foreground of an element/content
+        - `background-color` → Used to set the color of background of an element/content
+
+    There are many ways to give color in CSS
+        1. Named Colors:
+            - color = black:
+            - giving value of color using Names
+            - Each browser can recognize around 150 named colors only out of millions of colors
+        2. RGB:
+            - color = rgb(0, 0, 0);
+            - RGB → Red, Green & Blue [ 3 primary colors/channels]
+            - there are 3 diff channels in RGB
+                - red channel → range (0, 255) ⇒ rgb(255, 0, 0)
+                - green  channel → range (0, 255) ⇒ rgb(0, 255, 0)
+                - blue channel → range (0, 255) ⇒ rgb(0, 0, 255)
+            - Different combination of each color gives a unique color
+            - Ex: rgb(255,0,0) → Red || rgb(0,255,0) → Green || rgb(255,255,255) → White
+        3. Hexadecimal [ Hex (or) Hex code ];
+            - color = #ffffff; [ total 6 f’s ⇒ 1st 2 f’s = “r” || next 2 f’s = “g” || last 2 f’s = “b” ]
+            - Hexadecimal → 16 digits ⇒ [ 0 1 2 3 4 5 6 7 8 9 A B C D E F ]
+                - range → [#000000, #ffffff]
+                - #0000ff ~rgb(0, 0, 255)
+                - red channel range → (0, 255) ~ ( 00, ff )
+*/
+
+/* 
+    Text Properties
+
+    1. text-align
+        - text-align → Aways works/aligns with respect to Parent element [ but Not about screen (or) document]
+        - It aligns the whole text/words of the entire specified element, according to given value
+            - text-align: left/start    ||    right/end     ||      center     ||       justify
+            - center → all the words/text will be centered irrespective of start & end alignment of doc
+            - justify → it makes sure to align the left start & right end throughout the document by adding extra spaces in between text/words.
+            - start/end → these are introduced in CSS3 to support language specifics
+                - Ex: eng → left to right || Arabic → right to left || japanese → top to bottom
+                - here if we use “start”, It will start the text according to language specific
+    
+    2. text-decoration
+        - text-decoration → used to set the decorative lines on the text [like underline]
+        - text-decoration: underline  ||  overline  || line-through  ||  none
+        - we can also add color & style to these text-decoration
+            - text-decoration-color: green   ||  rgb(0,0,0)  || #ffffff
+            - text-decoration: red underline || rgb(253,0,0) line-through
+            - text-decoration-style: solid  ||  double  ||  dashed  || dotted  ||  wavy
+            - text-decoration: dotted overline
+            - text-decoration: teal double underline;
+                - In this way we can use the combinations [order is NOT Imp]
+        - This is mainly used in “removing the <a> tag’s underline”
+
+    3. font-family: [font style]
+        - font-family → specifies a prioritized list of 1 (or) more font family names
+        - font-family: arial;
+        - font-family: avanta garde, didot, sans-serif; [last 2 are back-up family fonts]
+            - Generally we will give list of font-families in real websites
+        - If this font-family is not supported by browser, then browser will display in browser’s default font-family.
+        - All the font-families are available in https://www.cssfontstack.com/
+
+    4. font-size
+        - This property sets the size of the font
+    
+    5. font-weight
+        - font-weight → used to make the font bold (or) light
+        - It’s vaue ranges from [ 100 200 300 400 500 600 700 800 900 & bolder, lighter]
+            - font-weight: normal [ normal == 400   ||   bold == 700]
+            - font-weight: bolder || lighter; [both of these values are used with respect to parent element]
+                - if parent element is 500, then it will become bolder than 500
+
+    6. line-height: [line spacing]
+        - line-height → used to control the spacing/height between the lines [line spacing]
+        - line-height: normal  ||  2.5  [ 2.5 == 2.5*normal ]  ||  2.5em  ||  150%
+
+    7. letter-spacing
+        - letter-spacing → used to control the horizantal spacing between the text characters/alphabets
+        - letter-spacing: normal  ||  5px
+    
+    8. text-transform
+        - text-transform → Used to transform the element’s text to all-uppercase, all-lowercase ..
+        - text-transfrom: uppercase  ||  lowecase  ||  capitalize  ||  none
+*/
+
+/* 
+    Units in CSS:
+        - absolute → fixed units ⇒ these units are universal & independent
+        - relative → These are defined in reative to other units
+            1 in == 96px == 72pt == 6pc
+
+    Pixels (px):
+        - most commonly used absolute unit
+        - 96px == 1 in
+        - It is not suitable in Responsive webistes
+            - Since, 5px is same in mobile phone, laptop & tv.
+            - So decreasing the screen size won’t decrease the content [content remains same]
+            - i.e., why absolute units are not suitable for “Responsive websites”
+*/

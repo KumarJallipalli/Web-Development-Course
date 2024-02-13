@@ -1,0 +1,107 @@
+
+/* Practice Q-1 */
+
+/* 
+h2 {
+    color: orange;
+}
+
+button {
+    background-color: blue;
+    color: white;
+}
+
+p {
+    background-color: black;
+    color: white;
+}
+
+ Practice Q-2 
+
+h3 {
+    font-family: league spartan;
+    color: #ffa511;
+    text-align: center;
+    font-size: 55px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    line-height: 1.5;
+    text-decoration: teal double underline;
+    text-transform: uppercase;
+} 
+*/
+
+/* Practice Q-3 */
+
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1 {
+    color: #1b74e4;
+}
+
+#searchbtn {
+    background-color: black;
+    color: white;
+}
+
+.userbtn {
+    background-color: aqua;
+}
+
+/* 
+                CSS_III - Box Model
+
+        - Create a div & 3 sibling divs inside it
+        - FOr the outer div set the following styling
+            - height=200px, width=70px & border= 2px solid black
+        - FOr the Inner div set the following styling
+            - height=50px, width=50px & border= 2px solid black
+        - Also set a margin=10px
+        - make inner divs circular & give them individual colors [red, yellow, green] like the signla lights
+*/
+#outer {
+    height: 200px;
+    width: 70px;
+    border: 2px solid black;
+}
+
+#outer div {
+    height: 50px;
+    width: 50px;
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 50%;
+}
+
+#red {
+    background-color: red;
+}
+#yellow {
+    background-color: yellow;
+}
+#green {
+    background-color: green;
+}
+
+#out_div {
+    height: 400px;
+    width: 200px;
+    margin: 10px;
+    background-color: burlywood;
+    font-size: 10px;
+}
+#in_div {
+    height: 100px;
+    width: 50px;
+    background-color: coral;
+    font-size: 2em; 
+    /* This font-size == 20px [2em == 2*parent's font-z=size] It will take parent's value */
+    padding: 1em;
+    /* This padding == 20px [1em == 2em == 20px] It will take it's own value */
+}
+
+div {
+    font-size: 2em;
+}
