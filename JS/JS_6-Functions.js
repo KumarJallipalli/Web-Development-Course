@@ -176,9 +176,100 @@ let hello = function() {
 
 hello(); // Hello
 /**
- *  - Here, hello -> A variable & behaves like a normal varaible
+ *  - Here, hello -> A variable & behaves like a normal varaible [ But Not a Function]
  *  - function is a nameless function & it is assigned to a variale called hello
  *  - This type of assigning a nameless fn to a variable is termed as Function Expression.
 */
 hello = 10;
 console.log(hello); //10
+
+
+/**
+ *  Higher Order Function:
+ *      - A function which either does
+ *              - take one (or) more functiosn as an arguments 
+ *              - returns a function
+*/
+
+//taking onr (or) more functions as an argumets
+function multipleGreet (func, n) {
+    for (let i=0; i<n; i++) {
+        func();
+    }
+}
+let greet = function() {
+    console.log("Hello");
+}
+
+multipleGreet(greet, 3); //prints Hello 3 times
+/**
+ *  - Here, multipleGreet -> a HOF (as it takes a function as an argument)
+ *  - greet -> Not a function but a variable having function as an expression
+*/
+
+
+// returns a function
+function oddEvenTest (request) {
+    if (request == "odd") {
+        return function(n) {
+            console.log(!(n%2 == 0));
+        }
+    }
+    else if (request == "even") {
+        return function(n) {
+            console.log(n%2 == 0);
+        }
+    }
+    else {
+        console.log("Wrong request");
+    }
+}
+
+let request = "even"; 
+let even = oddEvenTest(request);
+even(3);    //  retuens a false
+even(10);   // retuens a true
+
+request = "odd";
+let odd = oddEvenTest(request);
+odd(3);     // returns a true
+odd(10);    // returns a false
+
+
+/**
+ *  Methods:
+ *      - Functions that are associated with Objects
+*/
+let calculator = {
+    num: 52,
+    add: function(a, b) {
+        return a+b;
+    },
+    sub: function(a, b) {
+        return a-b;
+    },
+    mul: function(a, b) {
+        return a*b;
+    }
+}
+
+calculator.add(2, 8)    // 10
+calculator.mul(10, 4)   //40
+
+/**
+ *  There is shorthand notation for writing functions inside an object
+*/
+//  shorthand
+let calculatorShort = {
+    num: 52,
+    add(a, b) {
+        return a+b;
+    },
+    sub(a, b) {
+        return a-b;
+    },
+    mul(a, b) {
+        return a*b;
+    }
+}
+calculatorShort.add(2, 8)
